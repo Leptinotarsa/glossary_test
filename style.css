@@ -1,8 +1,3 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glossary html</title>
-
 <style>
 .bordered-image {
     border: medium solid #5D5D5D;
@@ -109,8 +104,8 @@ h5 {
     width: auto;
 }
     .indent {
-    margin-top: 20;
-    margin-right: 20;
+    margin-top: 20px;
+    margin-right: 20px;
     margin-left: 20px;
 }
     .comment {
@@ -121,5 +116,4 @@ h5 {
 
 
 </style>
-<link href="glossary.css" rel="stylesheet" type="text/css">
-</head>
+
