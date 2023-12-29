@@ -7,10 +7,43 @@ p {
   color: #870000;
   margin-bottom: 15px;
 }
-.bordered-image {
-    border: medium solid #5D5D5D;
+   .heavy-rule {
+        border-style: solid; /* Explicitly set border style */
+       border-color: #979595;
+        border-width: 4px;
+       width: 100%;
+    }
+/* CSS for upgraded index buttons */
+#index-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px; /* Set the height of the container and buttons to be the same */
+    background-color: #E2E2E2;
+    overflow-x: auto; /* Add horizontal scroll if the buttons don't fit */
+ /*    flex-grow: 1; ON HOLD:  Ensure the container takes up all available horizontal space */
+    text-align: center; /* Center the buttons within the container */
 }
 
+.index-button {
+    width: 60px;
+    height: 60px; /* Set the height of the buttons to be the same as the container */
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 45px;
+    color: #fff !important;
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+/* Button Hover behavior*/
+.index-button:hover { 
+    background-color: #45a049;
+}
         header {
     background-color: #333;
     color: #fff;
@@ -47,6 +80,7 @@ p {
 .text-cell {
     vertical-align: top;
     padding: 10;
+    border: none;
   /* Add specific styling for cells with simple text */
 }
 
@@ -62,29 +96,9 @@ p {
 p {
     font-size: 18px;
 }
-.custom-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #555; /* Dark gray background color */
-    color: white; /* White text color */
-}
+/* deleting 92-115 in styleplay. Not sure I need these */
 
-.custom-table td {
-    padding: 10px; /* Padding on the left and right */
-    border: 1px solid #ddd;
-    font-weight: bold; /* Bold font */
-}
-
-.custom-table td img {
-    display: block; /* Make sure the image behaves as a block element */
-    margin: 0 auto; /* Center the image horizontally within the cell */
-}
-
-.custom-table td:first-child,
-.custom-table td:nth-child(2) {
-    padding-top: 5px; /* Adjust top padding for the first and second cells */
-    padding-bottom: 5px; /* Adjust bottom padding for the first and second cells */
-}
+} /* End deleted part */
 
 
 
@@ -118,6 +132,7 @@ p {
     font-family:  font-family: Georgia / serif:
     font-size: 16px;
 }
+
 body p {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -173,23 +188,53 @@ h5 {
     color: red !important;
     font-weight: bold;
 }
-/* styles.css */
-
-.magnify-container {
-  position: relative;
-  width: 400px; /* Set your desired width */
-  height: 400px; /* Set your desired height */
-  overflow: hidden;
+/* Code that makes Megachile-like image magnification */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#magnifyImage1,
-#magnifyImage2 {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-out;
-  position: absolute;
-  left: 0;
-  top: 0;
+.image-container {
+    position: relative;
+    margin: 10px;
 }
+
+.gallery-image {
+    width: 300px; /* Adjust the size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+.view-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-image {
+    width: 90vw; /* 90% of the viewport width */
+    height: auto;
+    cursor: pointer;
+}
+
+/* End code that makes Megachile-like image magnification */
 
 </style>
