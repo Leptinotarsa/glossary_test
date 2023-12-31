@@ -281,3 +281,7 @@ createImageContainer('Anoetus_on_Halictus_parallelus_BMOC_15-0606-038.jpg', 'lar
 createImageContainer('acarinarium.jpg', 'large/acarinarium.jpg');
 createImageContainer('acarinarium, wikipedia.jpg', 'large/acarinarium, wikipedia.jpg');
 createImageContainer('Megachile perihirta,basitarsus.jpg', 'large/Megachile perihirta,basitarsus.jpg');
+createImageContainer('Hylaeus abd v metasoma copy.jpg', 'large/Hylaeus abd v metasoma copy.jpg');
+createImageContainer('arched basal vein copy.jpg', 'large/arched basal vein copy.jpg');
+createImageContainer('arolium megachile.jpg', 'large/arolium megachile.jpg');
+

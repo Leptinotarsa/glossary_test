@@ -1,14 +1,5 @@
 <style>
-body {
-    margin: 50px;
-}
-body p {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333333;
-  margin-bottom: 15px;
-}
+/* CSS for Paragraph Style */
 p {
   font-family: Georgia / serif;
   font-size: 16px;
@@ -20,9 +11,6 @@ p {
 .caption {
     font-size: 12pt;
     font-style: italic;
-    margin-top: 5px; /* Add margin to separate the image from the caption */
-    text-align: center; /* Center the caption text */
-    position: relative;
 }
    .heavy-rule {
         border-style: solid; /* Explicitly set border style */
@@ -41,41 +29,35 @@ p {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 50px; /* Set the height of the container and buttons to be the same */
+    height: 60px; /* Set the height of the container and buttons to be the same */
     background-color: #E2E2E2;
     overflow-x: auto; /* Add horizontal scroll if the buttons don't fit */
  /*    flex-grow: 1; ON HOLD:  Ensure the container takes up all available horizontal space */
     text-align: center; /* Center the buttons within the container */
 }
-.index-container {
-    display: flex;
-}
+
 .index-button {
-    width: 40px;
-    height: 40px; /* Set the height of the buttons to be the same as the container */
+    width: 60px;
+    height: 60px; /* Set the height of the buttons to be the same as the container */
     margin: 0 5px;
     padding: 0 10px; /* Adjust the padding for left and right space */
-   display: inline-block; /* Use inline-block to make the buttons inline */
+    display: flex;
     justify-content: center;
-
+    align-items: center;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 45px;
     color: #fff !important;
     background-color: #000000;
     border: 1px solid #000000;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-*/
-}
-/* Wider button for words:*/
+/* Wider button for word:*/
 .wider-button {
-    font-size: 14pt;
+    font-size: 12pt;
     width: auto; /* Set width to auto for the wider button */
-    display: inline-flex; /* Ensure the wider button is also inline */
 }
-
-Hover behavior*/
+/* Button Hover behavior*/
 .index-button:hover { 
     background-color: #45a049;
 }
@@ -167,6 +149,14 @@ p {
     font-family:  font-family: Georgia / serif:
     font-size: 16px;
 }
+
+body p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  margin-bottom: 15px;
+}
 a:link {
     color: #1B45F5;
 }
@@ -216,35 +206,41 @@ h5 {
     font-weight: bold;
 }
 /* Code that makes Megachile-like image magnification */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .image-container {
     position: relative;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-
+/* class that will allow the positioning of buttons relative to jpg */
 .image-wrapper {
     position: relative;
+        display: flex;
+    align-items: flex-end; /* Align the button to the bottom of the image */
 }
-
 .gallery-image {
-    width: 100%;
+    width: 300px; /* Adjust the size as needed */
     height: auto;
     cursor: pointer;
 }
 
 .view-button {
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: 5px; /* Adjust to move the button up or down from the bottom */
+    left: 5px; /* Adjust to move the button left or right from the right edge */
+    /* original version, middle of image:
+    top: 50%;
+    left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
     padding: 10px;
     background-color: #333;
     color: #fff;
     border: none;
     cursor: pointer;
 }
-
 
 .overlay {
     display: none;
