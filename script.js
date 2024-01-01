@@ -284,4 +284,12 @@ createImageContainer('Megachile perihirta,basitarsus.jpg', 'large/Megachile peri
 createImageContainer('Hylaeus abd v metasoma copy.jpg', 'large/Hylaeus abd v metasoma copy.jpg');
 createImageContainer('arched basal vein copy.jpg', 'large/arched basal vein copy.jpg');
 createImageContainer('arolium megachile.jpg', 'large/arolium megachile.jpg');
+createImageContainer('M. sculpturalis,USGS,piceous copy.jpg', 'large/M. sculpturalis,USGS,piceous copy.jpg');
+createImageContainer('amegilla,anthophorini,ochraceous copy.jpg', 'large/amegilla,anthophorini,ochraceous copy.jpg');
+createImageContainer('appressed amegilla.jpg', 'large/appressed amegilla.jpg');
+createImageContainer('Euglossa tibia copy.jpg', 'large/Euglossa tibia copy.jpg');
+createImageContainer('drawing palp,galea,glossa copy.jpg', 'drawing palp,galea,glossa copy.jpg');
+createImageContainer('clypeus gallery copy.jpg', 'clypeus gallery copy.jpg');
+createImageContainer('Megachile subexilis,clypeus copy.jpg', 'large/Megachile subexilis,clypeus copy.jpg');
+
 
