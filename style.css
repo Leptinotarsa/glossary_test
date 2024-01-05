@@ -116,6 +116,13 @@ p {
             box-sizing: border-box;
             padding: 10px;
         }
+/* Style image rotation In a 2-image table, I had an overflow prob; thus max-width of 80%*/
+    .rotated-image {
+      transform: rotate(90deg);
+      max-width: 80%;
+      height: auto;
+      width: auto; /* Adjust the width as needed */
+    }
 .column p .bordered-image {
 }
 /* Style for cells with simple text */
