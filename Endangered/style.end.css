@@ -141,7 +141,7 @@ h2 {
         color: #0725A3;
 }
 h3 {
-    font-size: 16px;
+    font-size: 30px;
 }
 h4 {
     font-size: 10px;
@@ -210,8 +210,15 @@ h5 {
 .caption {
     margin-top: 5px; /* Add margin to separate the image from the caption */
     text-align: center;
+    font-style: italic;
+    font-size: 17px !important;
 }
-
+ .heavy-rule {
+        border-style: solid; /* Explicitly set border style */
+       border-color: #979595;
+        border-width: 2px;
+       width: 100%;
+    }
 
 .overlay {
     display: none;
