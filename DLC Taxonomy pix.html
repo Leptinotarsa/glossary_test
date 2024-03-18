@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--"stylesheet" has the last shot at putting view buttons where I want them. Not successful.
+"style view ctr below" has an earlier version that put the buttons ctr and below images.-->
+<!--<link rel="stylesheet" href="style.css">-->
+
+
+    <script defer src="script.js"></script>
+<head>
+    <link rel="stylesheet" href="style.css">
+<title>Repository of select images, 2024</title>
+<meta name="description" content="Currently a draft" />
+<meta name="keywords" content="bees, glossary, discoverlife, morphology" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+</head>
+<body bgcolor="#E2E2E2">
+<!--asdasdasda-->
+
+<!-- Old header
+                    <section class="full"><img src="header green bee copyPS.jpg" alt="" width="1800" class="full"/><em>​<br>
+                    ​Intro stuffd</em></section>-->
+<!-- New header -->
+
+<!--
+-->
+
+
+
+<hr class="heavy-rule">
+<table width="100%">
+    <tbody>
+        <tr>
+            <td width="60%" class="text-cell">
+                <!-- First cell with text -->
+                <a name="term"></a><h2>Andrena female</h2><p>Collected 15 March, Herbert Farm.</p>
+            </td>
+            <td width="20%" class="bordered-box-cell">
+                <!-- Second cell with image and caption -->
+                <div class="image-container">
+                    <img src="salmon red.jpg" class="gallery-image" onclick="openOverlay('salmon red.jpg')">
+                    <div class="caption">Caption for Image 1</div>
+                </div>
+            </td>
+            <td width="20%" class="bordered-box-cell">
+                <!-- Third cell with image and caption -->
+                <div class="image-container">
+                    <img src="salmon.jpg" class="gallery-image" onclick="openOverlay('salmon.jpg')">
+                    <div class="caption">Caption for Image 2</div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!--DEFAULT FOR A ONE IMAGE ENTRY--><font color=red face="Comic sans MS">DEFAULT FOR A ONE IMAGE ENTRY:<p></p></font>
+<hr class="heavy-rule">
+<table width="100%">
+    <tbody>
+        <tr>
+            <td width="70%" class="text-cell">
+                <!-- First cell with text -->
+                <a name="term"></a><h2>term</h2><p>Definition.</p>
+            </td>
+            <td width="30%" class="bordered-box-cell">
+                <!-- Second cell with image and caption ADD to JS-->
+                <div class="image-container">
+                    <img src="salmon.jpg" class="gallery-image" onclick="openOverlay('salmon.jpg')">                    
+                    <div class="caption">Caption for Image</div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!--DEFAULT FOR A NO IMAGE ENTRY--><font color=red face="Comic sans MS">DEFAULT FOR A NO IMAGE ENTRY:<p></p></font>
+<hr class="heavy-rule">
+<table width="100%">
+    <tbody>
+        <tr>
+            <td width="100%" class="text-cell">
+                <!-- First cell with text -->
+                <a name="tubercle"></a><h2>tubercle</h2><p>Some text goes here.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- references -->
+                                  
+ 
+<font color=red face="Comic sans MS">placeholders, will update to more formal format</font>                                  
+<hr class="heavy-rule">
+<A name="references"><h2>References and Source Material</h2>
+<!--Put anchors one each reference, for links from definitions.-->
+<div class="reference">
+
+<a name="BOW">
+    </a><a href="https://static1.squarespace.com/static/5a849d4c8dd041c9c07a8e4c/t/5ad3bc968a922d44a4728936/1523825933048/Michener+2007+The+Bees+of+the+World.pdf">The Bees of the World 2nd Edition.</a>Charles Duncan Michener, 2007. "A  definitive reference by an acclaimed expert accounts for 1200 genera/subgenera and 16,000 species of bees in the world." <p></p>
+
+<a name=HOW"></a><a href="https://www.researchgate.net/publication/259227143_Hymenoptera_of_the_World_An_Identification_Guide_to_Families">Hymenoptera of the World: An Identification Guide to Families.</a> Goulet and Huber, 1993. <p></p>
+
+<a name="BG"></a>The Bee Genera of North and Central America. Michener, McGinley, Danforth. 1994.<p></p>
+
+<a name="BIRL"></a><a href="https://www.usgs.gov/labs/native-bee-inventory-and-monitoring-lab/usgs-native-bee-inventory-and-monitoring-lab">USGS Native Bee Inventory and Monitoring Lab.</a> Manager of DiscoverLife guides, and source for hi-resolution catalog of over 4500 photographs of bees, other insects, and plants.  <p></p>
+
+<a name="OSU"></a>Morphology and External Morphology, Oregon State University Agri Expt Stn, 1969.<p></p>
+<a name="Mich78">
+    </a><a href="https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1100&context=bee_lab_mi">Pollen Manipulation and Related Activities and Structures in Bees
+of the Family Apidae.</a>Michener et al 1978. "A  definitive reference by an acclaimed expert accounts for 1200 genera/subgenera and 16,000 species of bees in the world." <p></p>
+<a name="MCGINLEY"></a>Studies of Halictinae (Apoidea: Halictidae), I: Revision of New World Lasioglossum Curtis, RJ McGinley, 1986
+</div>
+<!-- Overlay container placed outside of the table -->
+<div class="overlay overlay-container" onclick="closeOverlay()">
+    <img src="hamuli lansgstroth.jpg" alt="Overlay Image" class="overlay-image">
+</div>
+</body>
+</html>
+<!--TRIGGERS
+
+0 = table entry with no image.
+1 = single image
+2 = 2 images
+3 = 3 images
+hr = heavy rule
+
+Dec 29: My new defaults no longer include a view button. Any image magnifies on a click. If I want a view button, I use this:
+                    <button class="view-button" onclick="openOverlay('salmon.jpg')">View</button>
+                    <div class="caption">Caption for Image</div>
+
+REGULAR EXPRESSION TO KILL BULLETS (use Brackets)
+FIND: <p>See also:<\/p>[\s\S]*?<\/ul>
+                                        
+                                        
+                                        
+                                        
+                                        
+
+
