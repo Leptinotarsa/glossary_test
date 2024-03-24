@@ -145,7 +145,28 @@ p {
 p {
     font-size: 18px;
 }
-/* deleting 92-115 in styleplay. Not sure I need these */
+/* List for orientation infon in the morpholgy page */
+td.custom-list-container {
+    border: 1px solid #000;
+    color: #535252;
+  padding: 2px;
+    margin-left: 20px; /* Adjust the left margin of <td> elements with the class "custom-list-container" */
+}
+.custom-list {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+      margin-left: 10px; /* Nudge the list to the right by 10px */
+}
+
+.custom-list li {
+  margin-bottom: 15px; /* Adjust spacing between list items if needed */
+}
+
+.custom-list li::before {
+  content: "•"; /* Use a bullet point as list item marker */
+  margin-right: 5px; /* Adjust spacing between bullet point and text */
+}
 
 } /* End deleted part */
 
