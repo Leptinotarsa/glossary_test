@@ -1,0 +1,46 @@
+ GET ANCHOR TARGETS
+ 
+ import re
+with open("get_anchor.html", "r") as file:
+    html_content = file.read()
+
+# Regular expression pattern
+pattern = r'<a[^>]*?name="([^"]*)"[^>]*>.*?(?=#)([^<]*)<\/a>'
+
+# Find all matches
+matches = re.findall(pattern, html_content)
+
+# Output the target strings
+for match in matches:
+    print(match[0], match[1])
+   
+   
+   acarinarial #appressed">appressed
+antenna #scape">scape
+appressed #tomentose">tomentose.
+basal #orientation">here
+cardo #stipes">stipes
+colors #ferrugineous">ferrugineous
+flocculus #trochanter">trochanter 
+fovea #fovea">Details for Andrena
+glossa #tongue">tongued
+humeral #pronotum">pronotal
+jugal #vannal">vannal lobe
+labial #prementum">prementum
+labrum #sclerite">sclerite
+maxilla #cardo">cardo
+maxillary #tongue">long-tongued
+mesopleuron #mesosoma">mesosoma
+mesosma #metasoma">metasoma
+metasoma #abdomen">abdomen
+microsculpture #tesselate">tessellation
+metepisternum #mesosoma">mesosoma
+occiput #preoccipital">preoccipital ridge
+ochraceous #:~:text=a)%3A%20ochraceous%2C%20ochre-yellow,is%20between%20Cinnamon%20Buff%20R.">Grammatical Dictionary of Botanical Latin
+propodeal #propodeum">propodeum
+sclerite #:~:text=SCLERITE%20-%20An%20area%20of%20the,flexible%20infoldings%20of%20the%20cuticula.">U Cal Riverside
+stipes #cardo">cardo
+striate #striate">striate
+supraclypeus #subantennal">subantennal sutures
+taxon #syrphid">syrphid
+tongue #glossa">glossa
