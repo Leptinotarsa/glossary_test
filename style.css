@@ -1,33 +1,60 @@
 <style>
-/*The next two elemnets specify a margin for all other elements 
-In the html, make the body tag like this: <body bgcolor="#E2E2E2" class="page-container"-->
-.page-container {
-    margin: 25px;
+/*Rebuilding to eliminate conflicting styles.
+
 }
-body.page-container {
-    margin: 25px;
-}
-But instead I am going to try and indent selectively 
-Tag below seems to do nothing*/
-body {
-    margin-left: 25px;
-}
-/* Indents every paragraph*/
+/* BELOW: the elements for the index*/
+ .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-container {
+            margin-right: 20px;
+        }
+
+        img {
+            height: 100px;
+            vertical-align: top;
+        }
+
+        #index-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            height: 60px;
+        }
+
+        .index-button {
+            width: 40px; /* Increase button width for demonstration */
+            height: 30px;
+            margin: 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            background-color: #DDDDD5;
+            border: 1px solid #000;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+/* ABOVE: the elements for the index*/
+
 body p {
-  font-family: Georgia / serif;
-  font-size: 20px;
-  line-height: 1.5;
-  color: black;
-  margin-left: 25px /* biggish*/
-}
-Tag below seems to do nothing*/
-p {
   font-family: Georgia / serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #870000;
-  margin-bottom: 15px;
+  color: black;
+  margin-left: 25px 
+      
 }
+.larger-text {
+    font-size: 1.5em; /* Adjust the font size as needed */
+}
+
+*
 /* CSS for caption Style */
 .caption {
     font-size: 12pt;
@@ -41,64 +68,25 @@ p {
         border-width: 2px;
        width: 100%;
     }
-/* CSS for reference section */
-.reference {
-    font-size: 12px;
-    text-indent: 1em;
-    margin: 0;
-}
-/* CSS for upgraded index buttons */
- .container {
-            display: flex;
-            align-items: center;
-        }
 
-        img {
-            height: 200px; /* Set the image height to match the index letters */
-            margin-right: 10px; /* Add some space between the image and index letters */
-            display: block; /* Display the image as a block element */
-            vertical-align: top; /* Align the image to the top */
-        }
-
-        #index-container {
-            display: flex;
-            flex-direction: column; /* Stack the index letters vertically */
-            justify-content: space-between; /* Distribute remaining space evenly */
-            align-items: flex-start; /* Align the index letters to the left */
-            background-color: #E2E2E2;
-            overflow-x: auto; /* Add horizontal scroll if the buttons don't fit */
-            height: 60px; /* Set the height of the container */
-        }
-
-        .index-row {
-            display: flex;
-            align-items: center;
-        }
-
-        .index-button {
-            width: 30px;
-            height: 30px; /* Set the height of the buttons */
-            margin: 0 5px;
-            padding: 0 10px; /* Adjust the padding for left and right space */
-            display: inline-block; /* Use inline-block to make the buttons inline */
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            font-size: 20px; /* Reduce font size for better fit */
-            color: #fff !important;
-            background-color: #000000;
-            border: 1px solid #000000;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
 /* Wider button for word:*/
 .wider-button {
-     font-size: 14pt;
-    width: auto; /* Set width to auto for the wider button */
-    display: inline-flex; /* Ensure the wider button is also inline */
+    width: 40px; /* Increase button width for demonstration */
+            height: 30px;
+            margin: 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #fff;
+            background-color: #000;
+            border: 1px solid #000;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 }
-}
-/* Button Hover behavior*/
+
+/* Button Hover behavior
 .index-button:hover { 
     background-color: #45a049;
 }
@@ -111,37 +99,7 @@ p {
     padding-left: 20px;
     padding-bottom: 10px;
         }
-/* Apr 30: maybe this .container is not needed? Seems to interfere with the index button container.
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
 */
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section h2 {
-            color: #333;
-        }
-
-        .column {
-            width: 100%;
-            float: left;
-            box-sizing: border-box;
-            padding: 10px;
-        }
-/* Style image rotation In a 2-image table, I had an overflow prob; thus max-width of 80%*/
-    .rotated-image {
-      transform: rotate(90deg);
-      max-width: 80%;
-      height: auto;
-      width: auto; /* Adjust the width as needed */
-    }
-.column p .bordered-image {
-}
 /* Style for cells with simple text */
 .text-cell {
     vertical-align: top;
@@ -159,8 +117,9 @@ p {
   margin: 0; /* Remove default margin on paragraphs */
   vertical-align: top; /* Align paragraphs to the top */
 }
+/* This p seems to be overruled by body p*/
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 /* List for orientation infon in the morpholgy page */
 td.custom-list-container {
@@ -169,23 +128,6 @@ td.custom-list-container {
   padding: 2px;
     margin-left: 20px; /* Adjust the left margin of <td> elements with the class "custom-list-container" */
 }
-.custom-list {
-  list-style-type: none; /* Remove default list styling */
-  margin: 0; /* Reset margin */
-  padding: 0; /* Reset padding */
-      margin-left: 10px; /* Nudge the list to the right by 10px */
-}
-
-.custom-list li {
-  margin-bottom: 15px; /* Adjust spacing between list items if needed */
-}
-
-.custom-list li::before {
-  content: "•"; /* Use a bullet point as list item marker */
-  margin-right: 5px; /* Adjust spacing between bullet point and text */
-}
-
-} /* End deleted part */
 
 
 
@@ -206,20 +148,13 @@ td.custom-list-container {
     height: auto;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+
+/*
     body,td,th {
     font-family:  font-family: Georgia / serif:
     font-size: 16px;
 }
-
+*/
 
 a:link {
     color: #1B45F5;
@@ -247,6 +182,7 @@ h4 {
 h5 {
     font-size: 8px;
 }
+
     .full {
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
     font-size: 18px;
@@ -256,6 +192,7 @@ h5 {
     width: auto;
     max-width: 100%;
 }
+/* 30 Apr 1835:
     .half {
     height: auto;
     width: auto;
@@ -275,7 +212,7 @@ h5 {
     display: flex;
     flex-wrap: wrap;
 }
-
+/* 30 Apr cut below
 .image-container {
     position: relative;
     margin: 10px;
@@ -283,7 +220,7 @@ h5 {
     flex-direction: column;
     align-items: center;
 }
-
+*/ /*30 Apr cut above*/
 .image-wrapper {
     display: flex;
     flex-direction: column;
@@ -295,21 +232,6 @@ h5 {
     height: auto;
     cursor: pointer;
 }
-
-.view-button {
-    margin-top: 5px; /* Add margin to separate the image from the button */
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.caption {
-    margin-top: 5px; /* Add margin to separate the image from the caption */
-    text-align: center;
-}
-
 
 .overlay {
     display: none;
@@ -329,7 +251,6 @@ h5 {
     cursor: pointer;
 }
 
-/* End code that makes Megachile-like image magnification Expt bit added below, midnite Dec 28*/
 .overlay-container {
     display: none;
     position: fixed;
