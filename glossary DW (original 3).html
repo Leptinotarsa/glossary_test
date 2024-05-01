@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--"stylesheet" has the last shot at putting view buttons where I want them. Not successful.
+"style view ctr below" has an earlier version that put the buttons ctr and below images.-->
+<!--<link rel="stylesheet" href="style.css">-->
 
 
     <script defer src="script.js"></script>
 <head>
-    <link rel="stylesheet" href="Apr 30 rebuild css.css">
+    <link rel="stylesheet" href="style.css">
 <title>Glossary of terms that describe bees</title>
 <meta name="description" content="Currently a draft" />
 <meta name="keywords" content="bees, glossary, discoverlife, morphology" />
@@ -30,49 +33,51 @@
 <hr class="heavy-rule">
 
     <h3>WORK IN PROGRESS DRAFT - NOT FOR DISTRIBUTION</h3>
-    
-  <!-- Note that the index part is using inline css. Because the default css file has conflicts -->  
-    
-    <div class="container" style="display: flex; align-items: center;">
-        <!-- Left section for image with text -->
-        <div class="image-container" style="margin-right: 20px;">
-            <a href="Morphology Overview.html"><img src="Andrena morphology button.jpg" alt="Clickable Image" style="width: auto; height: 120px; vertical-align: top;"></a>
-            <br>
-            &nbsp; &nbsp;&nbsp; &nbsp;<strong>Morphology Overview </strong></a>
-            <!-- Add any additional text here -->
-        </div>
-        <a name="index">   
-        <!-- Right section for index buttons -->
-        <div id="index-container" style="display: flex; overflow-x: auto; white-space: nowrap; height: 60px;">
-            <a href="#A" class="index-button">A</a>
-            <a href="#B" class="index-button">B</a>
-            <a href="#C" class="index-button">C</a>
-            <a href="#D" class="index-button">D</a>
-            <a href="#E" class="index-button">E</a>
-            <a href="#F" class="index-button">F</a>
-            <a href="#G" class="index-button">G</a>
-            <a href="#H" class="index-button">H</a>
-            <a href="#I" class="index-button">I</a>
-            <a href="#J" class="index-button">J</a>
-            <a href="#K" class="index-button">K</a>
-            <a href="#L" class="index-button">L</a>
-            <a href="#M" class="index-button">M</a>
-            <a href="#O" class="index-button">O</a>
-            <a href="#P" class="index-button">P</a>
-            <a href="#Q" class="index-button">Q</a>
-            <a href="#R" class="index-button">R</a>
-            <a href="#S" class="index-button">S</a>
-            <a href="#T" class="index-button">T</a>
-            <a href="#U" class="index-button">U</a>
-            <a href="#V" class="index-button">V</a>
-            <a href="#W" class="index-button">W</a>
-            <a href="#X" class="index-button">X</a>
-            <a href="#Y" class="index-button">Y</a>
-            <a href="#Z" class="index-button">Z</a>
-        </div>
-    </div>
-    
+   
+ <hr class="heavy-rule">
 
+
+<!-- The Index --> 
+<a name="index">   
+<div id="index-container">
+<a href="Morphology Overview.html" class="index-button wider-button">big picture, overview</a>
+
+<a href="#A" class="index-button">A</a>
+<a href="#B" class="index-button">B</a>
+<a href="#C" class="index-button">C</a>
+<a href="#D" class="index-button">D</a>
+<a href="#E" class="index-button">E</a>
+<a href="#F" class="index-button">F</a>
+<a href="#G" class="index-button">G</a>
+<a href="#H" class="index-button">H</a>
+<a href="#I" class="index-button">I</a>
+<a href="#J" class="index-button">J</a>
+<a href="#K" class="index-button">K</a>
+<a href="#L" class="index-button">L</a>
+<a href="#M" class="index-button">M</a>
+<a href="#N" class="index-button">N</a>
+<a href="#O" class="index-button">O</a>
+<a href="#P" class="index-button">P</a>
+<a href="#Q" class="index-button">Q</a>
+<a href="#R" class="index-button">R</a>
+<a href="#S" class="index-button">S</a>
+<a href="#T" class="index-button">T</a>
+<a href="#U" class="index-button">U</a>
+<a href="#V" class="index-button">V</a>
+<a href="#W" class="index-button">W</a>
+<a href="#X" class="index-button">X</a>
+<a href="#Y" class="index-button">Y</a>
+<a href="#Z" class="index-button">Z</a>
+<a href="#references" class="index-button wider-button">references</a>
+
+
+</div>
+    <p></p>
+        <p></p>
+<!--EDIT NOTES AT END OF FILE
+
+
+-->
    <hr class="heavy-rule">
 
 <div class="index-container">
@@ -180,7 +185,7 @@
                 <!-- Second cell with image and caption ADD to JS-->
                 <div class="image-container">
                     <img src="Colletes,lateral,genitalia,USGSBIML copy.jpg" class="gallery-image" onclick="openOverlay('Colletes,lateral,genitalia,USGSBIML copy.jpg')">
-                     <div class="caption">Colletes, <a href="https://www.usgs.gov/labs/native-bee-inventory-and-monitoring-lab/usgs-native-bee-inventory-and-monitoring-lab">BIRL/USGS</a></div>
+                     <div class="caption">Colletes, <a href="#BIRL">BIRL/USGS</a></div>
                 </div>
             </td>
         </tr>
@@ -279,7 +284,7 @@
                 <div class="image-container">
                     <img src="appressed amegilla.jpg" class="gallery-image" onclick="openOverlay('appressed amegilla.jpg')">
 
-                    <div class="caption">Anthophorine bee. <a href="https://www.usgs.gov/labs/native-bee-inventory-and-monitoring-lab/usgs-native-bee-inventory-and-monitoring-lab">BIRL/USGS</a></div>
+                    <div class="caption">Anthophorine bee. <a href="#BIRL">BIRL/USGS</a></div>
                 </div>
             </td>
         </tr>
@@ -340,7 +345,7 @@
         <tr>
             <td width="60%" class="text-cell">
                 <!-- First cell with text -->
-                <a name="axilla"></a><h2>axilla</h2><p>Sclerites on either side of the postero-lateral margin of the <a href="#scutum">scutum</a>. In most    genera, these are functionally a portion of the <a href="#scutellum">scutellum</a>, but are of scutal origin. In the parasitic genera, Coelioxys, Dioxys, and Triepeolus, the axillae are produced posteriorly as distinct spines, or teeth.</p>
+                <a name="axilla"></a><h2>axilla</h2><p>Sclerites on either side of the postero-lateral margin of the scutum. In most    genera, these are functionally a portion of the scutellum, but are of scutal origin. In the parasitic genera, Coelioxys, Dioxys, and Triepeolus, the axillae are produced posteriorly as distinct spines, or teeth.</p>
                     <p><a href="#index"><strong>return to top</strong></a></p>
             </td>
   <td width="20%" class="bordered-box-cell">
@@ -516,7 +521,7 @@
                 <div class="image-container">
                     <img src="Andrena,head,labral process bidentate,evoluta copy.jpg" class="gallery-image" onclick="openOverlay('Andrena,head,labral process bidentate,evoluta copy.jpg')">
 
-                    <div class="caption">Bidentate <a href="#labral">labral process</a> of <em>Andrena</em>.</div>
+                    <div class="caption">Bidentate labral process of <em>Andrena</em>.</div>
                 </div>
             </td>
         </tr>
@@ -576,7 +581,7 @@
 <table width="100%">
     <tbody>
         <tr>
-            <td width="40%" class="text-cell">
+            <td width="20%" class="text-cell">
                 <!-- First cell with text -->
                 <a name="carina"></a><h2>carina</h2><p>Ridge, or raised line demarcating an edge.&nbsp;</p>
                     <p><a href="#index"><strong>return to top</strong></a></p>
@@ -588,7 +593,14 @@
 
                     <div class="caption"><em>Agapostemon virescens:</em> propodeum enclosed by carina.</div>
                 </div>
-            </td> 
+            </td> <td width="20%" class="bordered-box-cell">
+                <!-- Second cell with image and caption -->
+                <div class="image-container">
+                    <img src="Lasioglossum,thorax,carinate.jpg" class="gallery-image" onclick="openOverlay('Lasioglossum,thorax,carinate.jpg')">
+
+                    <div class="caption"><em>Lasioglossum</em> propodeum: A distinct posterior carina.</div>
+                </div>
+            </td>
            <td width="20%" class="bordered-box-cell">
                 <!-- Second cell with image and caption -->
                 <div class="image-container">
@@ -602,41 +614,6 @@
                     <img src="Osmia,carina.jpg" class="gallery-image" onclick="openOverlay('Osmia,carina.jpg')">
 
                     <div class="caption">The <a href="#hypostomal">hypostomal</a> carina of <em>Osmia</em>.</div>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
-    <table width="100%">
-    <tbody>
-        <tr>
-            <td width="40%" class="text-cell">
-                <!-- First cell with text -->
-                <a name="carina"></a><h2>carinae of the propodeum</h2>
-                <p>Among Lasioglossum, the carinae of the <a href="#propodeum">propodeum</a> are important traits that differentiate subgenera and species.&nbsp; &nbsp;A lateral carina wholly or partially separates the vertical posterior face of the propodeum from the sides. When present, the oblique (or posterior) carina extends medially across the dorsolateral slope of the <a href="#propodeal">propodeal enclosure</a>.&nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p><a href="#index"><strong>return to top</strong></a></p>
-            </td>
-            <td width="20%" class="bordered-box-cell">
-                <!-- Second cell with image and caption -->
-                <div class="image-container">
-                    <img src="Lasioglossum glabiventre,female,propodeum.jpg" class="gallery-image" onclick="openOverlay('carina,Agapostemon virescens copy.jpg')">
-
-                    <div class="caption">An incomplete lateral carina, which does not reach the dorsolateral slope of the propodeum. Oblique carina absent.&nbsp;</div>
-                </div>
-            </td> 
-           <td width="20%" class="bordered-box-cell">
-                <!-- Second cell with image and caption -->
-                <div class="image-container">
-                    <img src="Lasioglossum,thorax,propodeum oblique and lateral,nigrum.jpg" class="gallery-image" onclick="openOverlay('https://idtools.org/tools/1078/images/BBSL178495_Anthodioctes_calcaratus_male_t1CARINA.jpg')">
-
-                    <div class="caption">A complete lateral carina, which reaches the dorsolateral slope. There is also an oblique carina, the portion that continues medially.</div>
-                </div>
-            </td> <td width="20%" class="bordered-box-cell">
-                <!-- Third cell with image and caption -->
-                <div class="image-container">
-                    <img src="Lasioglossum,thorax,propodeum, lateral carina,truncatum.jpg" class="gallery-image" onclick="openOverlay('Osmia,carina.jpg')">
-
-                    <div class="caption">Another specimen with complete carinae, a typical feature of subgenus Sphecodogastra.</div>
                 </div>
             </td>
         </tr>
@@ -667,7 +644,7 @@
                 <!-- Second cell with image and caption ADD to JS-->
                 <div class="image-container">
                     <img src="clypeus andrena rugosa copy.jpg" class="gallery-image" onclick="openOverlay('clypeus andrena rugosa copy.jpg')">
-                     <div class="caption">Clypeus of Andrena rugosa. <a href="https://www.usgs.gov/labs/native-bee-inventory-and-monitoring-lab/usgs-native-bee-inventory-and-monitoring-lab">BIRL/USGS</a>.</div>
+                     <div class="caption">Clypeus of Andrena rugosa. <a href="#BIRL">BIRL/USGS</a>.</div>
                 </div>
             </td>
         </tr>
@@ -692,7 +669,7 @@
             <td width="70%" class="text-cell">
                 <!-- First cell with text -->
                 <a name="colors"></a><h2>colors</h2><p>In taxonomic treatments, the color of hairs, integument, and maculations is often described with a somewhat cryptic technical vocabulary. The terms (e.g., <a href="#ferrugineous">ferrugineous</a>) do not have precise definitions; rather, their meaning varies by taxon and taxonomist. The figure below suggests roughly how some technical terms compare; see other glossary entries for specifics on each term.</p>
-
+                    <p><a href="#index"><strong>return to top</strong></a></p>
             </td>
             <td width="30%" class="bordered-box-cell">
                 <!-- Second cell with image and caption ADD to JS-->
@@ -860,7 +837,7 @@
             <td width="20%" class="bordered-box-cell">
                 <!-- Third cell with image and caption -->
                 <div class="image-container">
-                    <img src="Megachile,male,legs,coxa red hairs copy.jpg" class="gallery-image" onclick="openOverlay('Megachile,male,legs,coxa red hairs copy.jpg')">
+                    <img src="Megachile,male,legs,coxa red hairs copy.jpg" class="gallery-image" onclick="openOverlay('Megachile,male,legs,coxa red hairs copy.jp')">
 
                     <div class="caption">A diagnostic feature from DiscoverLife key for <em>Megachile</em> male: stout hairs at base of forecoxal spines.</div>
                 </div>
@@ -975,7 +952,7 @@
                 <!-- Second cell with image and caption ADD to JS-->
                 <div class="image-container">
                     <img src="dental brush.jpg" class="gallery-image" onclick="openOverlay('dental brush.jpg')">
-                     <div class="caption">Ask your dentist for a few of these specimen cleaning tools. Charm your dentist by explaining: "I need them to comb my bees..."</div>
+                     <div class="caption">Ask your dentist for a few of these specimen cleaning tools. Charm your dentist by explaining: "I need them for my bees..."</div>
                 </div>
             </td>
         </tr>
@@ -1349,7 +1326,7 @@
                 <div class="image-container">
                     <img src="https://content.eol.org/data/media/e2/8c/58/509.d9a0cdb988c8c6832aaa25b98d33e0c5.jpg" class="gallery-image" onclick="openOverlay('https://content.eol.org/data/media/e2/8c/58/509.d9a0cdb988c8c6832aaa25b98d33e0c5.jpg')">
                     
-                    <div class="caption">Megachile pugnata is distinctive for the posteroventral "genal tooth" <a href="https://www.usgs.gov/labs/native-bee-inventory-and-monitoring-lab/usgs-native-bee-inventory-and-monitoring-lab">BIRL/USGS</a></div>
+                    <div class="caption">Megachile pugnata is distinctive for the posteroventral "genal tooth" <a href="#BIRL">BIRL/USGS.</a></div>
                 </div>
             </td>
         </tr>
@@ -1446,7 +1423,7 @@
                 <!-- Second cell with image and caption -->
                 <div class="image-container">
                     <img src="gynandro lasio.jpg" class="gallery-image" onclick="openOverlay('gynandro lasio.jpg')">
-                     <div class="caption">Lasioglossum hitchensi. The antenna on the left is female, with 12 segments. On the right, a 13-segmented male antenna. <a href="https://www.usgs.gov/labs/native-bee-inventory-and-monitoring-lab/usgs-native-bee-inventory-and-monitoring-lab">BIRL/USGS</a></div>
+                     <div class="caption">Lasioglossum hitchensi. The antenna on the left is female, with 12 segments. On the right, a 13-segmented male antenna. <a href="#BIRL">BIRL/USGS.</a></div>
                 </div>
             </td>
             <td width="30%" class="bordered-box-cell">
@@ -1454,7 +1431,7 @@
                 <div class="image-container">
                     <img src="gynandro agapo.jpg" class="gallery-image" onclick="openOverlay('gynandro agapo.jpg')">
                     
-                    <div class="caption">Agapostemon. Half of the clypeus (the front plate of the head) is male, half female (bilaterally) similarly one mandible is male and one female. The male has 6 tergites like the female, but the coloration is mostly male, which is brownish, but, interestingly there are some spots on the abdomen that are metallic green which is female. <a href="https://www.usgs.gov/labs/native-bee-inventory-and-monitoring-lab/usgs-native-bee-inventory-and-monitoring-lab">BIRL/USGS</a></div>
+                    <div class="caption">Agapostemon. Half of the clypeus (the front plate of the head) is male, half female (bilaterally) similarly one mandible is male and one female. The male has 6 tergites like the female, but the coloration is mostly male, which is brownish, but, interestingly there are some spots on the abdomen that are metallic green which is female. <a href="#BIRL">BIRL/USGS.</a></div>
                 </div>
             </td>
         </tr>
@@ -1646,22 +1623,15 @@
 <table width="100%">
     <tbody>
         <tr>
-            <td width="40%" class="text-cell">
+            <td width="70%" class="text-cell">
                 <!-- First cell with text -->
                 <a name="imbricate"></a><h2>imbricate</h2>
 <p>Overlapping in sequence, as tiles or shingles on a roof; resembling overlapping tiles, as decoration or drawings (Dictionary.com). In a google search, one finds many scutums and metasomas described as imbricate. I strongly suspect that imbricate is used as a synonym for tesselate.</p>
             </td>
-                       <td width="30%" class="bordered-box-cell">
-                <!-- Second cell with image and caption ADD to JS-->
-                <div class="image-container">
-                    <img src="imbricate lasio prop.jpg" class="gallery-image" onclick="openOverlay('imbricate lasio prop.jpg')">
-                     <div class="caption">Posterior face of Lasioglossum propodeum. </div>
-                </div>
-            </td>
             <td width="30%" class="bordered-box-cell">
                 <!-- Second cell with image and caption ADD to JS-->
                 <div class="image-container">
-                    <img src="imbricate.jpg" class="gallery-image" onclick="openOverlay('imbricate.jpg')">
+                    <img src="imbricate.jpg" class="gallery-image" onclick="openOverlay('salmon.jpg')">
                      <div class="caption">Imbricate particularly in upper corners. Andrena&nbsp;</div>
                 </div>
             </td>
@@ -1965,7 +1935,7 @@ pharynx (Snodgrass, 1956). Excerpt and image from&nbsp;Michener, Charles D., and
         <tr>
             <td width="70%" class="text-cell">
                 <!-- First cell with text -->
-                <a name="maxilla"></a><h2>maxilla</h2><p>A pair of appendages which are divided in three parts: <a href="#cardo">cardo</a>, which articulates with the head; <a href="#stipes">stipes</a>, which supports a sensory palp; <a href="#galea">galea</a> and <a href="#lacinia">lacinia</a>, which act as fork and spoon to manipulate the food. (<a href="https://allyouneedisbiology.wordpress.com/tag/bee-mouthparts/">All you need is Biology</a>). For more context on mouthparts, see <a href="#tongue">tongue</a>.</p>
+                <a name="maxilla"></a><h2>maxilla</h2><p>A pair of appendages which are divided in three parts: <a href="#cardo">cardo</a>, which articulates with the head; <a href="#stipes">stipes</a>, which supports a sensory palp; <a href="#galea">galea</a> and <a href="#lacinia">lacinia</a>, which act as fork and spoon to manipulate the food. (<a href="https://allyouneedisbiology.wordpress.com/tag/bee-mouthparts/">All you need is Biology</a>). FOr more context on mouthparts, see <a href="#tongue">tongue</a>.</p>
                     <p><a href="#index"><strong>return to top</strong></a></p>
             </td>
 
@@ -2047,7 +2017,7 @@ pharynx (Snodgrass, 1956). Excerpt and image from&nbsp;Michener, Charles D., and
             <td width="20%" class="bordered-box-cell">
                 <!-- Second cell with image and caption ADD to JS-->
                 <div class="image-container">
-                    <img src="Andrena,metallic,slightly comp copy.jpg" class="gallery-image" onclick="openOverlay('Andrena,metallic,slightly comp copy.jpg')">
+                    <img src="Andrena,metallic,slightly comp copy.jpg" class="gallery-image" onclick="openOverlay('Osmia cara,metalic.jpg')">
                      <div class="caption">Dark vs slightly metallic tergae. </div>
                 </div>
                   <td width="20%" class="bordered-box-cell">
@@ -2295,7 +2265,7 @@ posterior (usually 3rd) part of a structure. So of course the third body region 
                 <div class="image-container">
                     <img src="amegilla,anthophorini,ochraceous copy.jpg" class="gallery-image" onclick="openOverlay('amegilla,anthophorini,ochraceous copy.jpg')">
 
-                    <div class="caption">Anthophorine bee, with ochracous metasomal hairs and clypeus.&nbsp;<a href="https://www.usgs.gov/labs/native-bee-inventory-and-monitoring-lab/usgs-native-bee-inventory-and-monitoring-lab">BIRL/USGS</a></div>
+                    <div class="caption">Anthophorine bee, with ochracous metasomal hairs and clypeus.&nbsp;<a href="#BIRL">USGS Bee Inventory and Monitoring Lab.</a></div>
                 </div>
             </td>
         </tr>
@@ -2462,7 +2432,7 @@ hind leg of the same side by pulling the former through the space between the pe
                 <div class="image-container">
                     <img src="Penicillum Melipona.jpg" class="gallery-image" onclick="openOverlay('Penicillum Melipona.jpg')">
                     
-                    <div class="caption">Penicillum of Melipona sp. <a href="https://www.usgs.gov/labs/native-bee-inventory-and-monitoring-lab/usgs-native-bee-inventory-and-monitoring-lab">BIRL/USGS</a></div>
+                    <div class="caption">Penicillum of Melipona sp. <a href="#BIRL">BIRL/USGS.</a></div>
                 </div>
             </td>
         </tr>
@@ -2482,7 +2452,7 @@ hind leg of the same side by pulling the former through the space between the pe
                 <div class="image-container">
                     <img src="M. sculpturalis,USGS,piceous copy.jpg" class="gallery-image" onclick="openOverlay('M. sculpturalis,USGS,piceous copy.jpg')">
 
-                    <div class="caption">Integument as piceous as it is possible to get. <a href="https://www.usgs.gov/labs/native-bee-inventory-and-monitoring-lab/usgs-native-bee-inventory-and-monitoring-lab">BIRL/USGS</a></div>
+                    <div class="caption">Integument as piceous as it is possible to get. <a href="#BIRL">BIRL/USGS.</a></div>
                 </div>
             </td>
         </tr>
@@ -3764,7 +3734,7 @@ based on morphology</a>).</p>
             </td>            <td width="20%" class="bordered-box-cell">
                 <!-- Third cell with image and caption -->
                 <div class="image-container">
-                    <img src="trochanterpacifica 10X.jpg" class="gallery-image" onclick="openOverlay('trochanterpacifica 10X.jpg')">
+                    <img src="trochanterpacifica 10X.jpg" class="gallery-image" onclick="openOverlay('Trochanter,andrena.jpg')">
                     
                     <div class="caption">The rounded "corner" of the trochanter (below in pic) is a character for Ceratina males.</div>
                 </div>
@@ -3895,7 +3865,7 @@ based on morphology</a>).</p>
         <tr>
             <td width="60%" class="text-cell">
                 <!-- First cell with text -->
-                <a name="wing"></a><h2>wings</h2><p>Every vein and cell of the wings of bees has a term (or two). Most of the diagnostically useful characters are on the forewing; these are listed in separate glossary entries. Hindwings appear in keys that ask for the relative lengths of the <a href="#jugal">jugal</a> and <a href="#vannal">vannal</a> lobes.</p>
+                <a name="wings"></a><h2>wings</h2><p>Every vein and cell of the wings of bees has a term (or two). Most of the diagnostically useful characters are on the forewing; these are listed in separate glossary entries. Hindwings appear in keys that ask for the relative lengths of the <a href="#jugal">jugal</a> and <a href="#vannal">vannal</a> lobes.</p>
                                                     <p><a href="#index"><strong>return to top</strong></a></p>
             </td>
             <td width="20%" class="bordered-box-cell">

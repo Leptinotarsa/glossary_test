@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--"stylesheet" has the last shot at putting view buttons where I want them. Not successful.
+"style view ctr below" has an earlier version that put the buttons ctr and below images.-->
+<!--<link rel="stylesheet" href="style.css">-->
 
 
     <script defer src="script.js"></script>
 <head>
-    <link rel="stylesheet" href="Apr 30 rebuild css.css">
+    <link rel="stylesheet" href="style.css">
 <title>Glossary of terms that describe bees</title>
 <meta name="description" content="Currently a draft" />
 <meta name="keywords" content="bees, glossary, discoverlife, morphology" />
@@ -30,49 +33,92 @@
 <hr class="heavy-rule">
 
     <h3>WORK IN PROGRESS DRAFT - NOT FOR DISTRIBUTION</h3>
-    
-  <!-- Note that the index part is using inline css. Because the default css file has conflicts -->  
-    
-    <div class="container" style="display: flex; align-items: center;">
-        <!-- Left section for image with text -->
-        <div class="image-container" style="margin-right: 20px;">
-            <a href="Morphology Overview.html"><img src="Andrena morphology button.jpg" alt="Clickable Image" style="width: auto; height: 120px; vertical-align: top;"></a>
-            <br>
-            &nbsp; &nbsp;&nbsp; &nbsp;<strong>Morphology Overview </strong></a>
-            <!-- Add any additional text here -->
-        </div>
-        <a name="index">   
-        <!-- Right section for index buttons -->
-        <div id="index-container" style="display: flex; overflow-x: auto; white-space: nowrap; height: 60px;">
-            <a href="#A" class="index-button">A</a>
-            <a href="#B" class="index-button">B</a>
-            <a href="#C" class="index-button">C</a>
-            <a href="#D" class="index-button">D</a>
-            <a href="#E" class="index-button">E</a>
-            <a href="#F" class="index-button">F</a>
-            <a href="#G" class="index-button">G</a>
-            <a href="#H" class="index-button">H</a>
-            <a href="#I" class="index-button">I</a>
-            <a href="#J" class="index-button">J</a>
-            <a href="#K" class="index-button">K</a>
-            <a href="#L" class="index-button">L</a>
-            <a href="#M" class="index-button">M</a>
-            <a href="#O" class="index-button">O</a>
-            <a href="#P" class="index-button">P</a>
-            <a href="#Q" class="index-button">Q</a>
-            <a href="#R" class="index-button">R</a>
-            <a href="#S" class="index-button">S</a>
-            <a href="#T" class="index-button">T</a>
-            <a href="#U" class="index-button">U</a>
-            <a href="#V" class="index-button">V</a>
-            <a href="#W" class="index-button">W</a>
-            <a href="#X" class="index-button">X</a>
-            <a href="#Y" class="index-button">Y</a>
-            <a href="#Z" class="index-button">Z</a>
-        </div>
-    </div>
-    
+   
+ <hr class="heavy-rule">
 
+
+<!-- The Index --> 
+<a name="index">   
+    <table width="100%" border="1" cellspacing="10" cellpadding="0">
+                    <tbody>
+                                        <tr>
+                                                            <td width="13%">    <img height="200" src="overview button.jpg" alt="Clickable Image"/></td>
+                                                             <td width="87%"><div id="index-container">
+<a href="#A" class="index-button">A</a>
+<a href="#B" class="index-button">B</a>
+<a href="#C" class="index-button">C</a>
+<a href="#D" class="index-button">D</a>
+<a href="#E" class="index-button">E</a>
+<a href="#F" class="index-button">F</a>
+<a href="#G" class="index-button">G</a>
+<a href="#H" class="index-button">H</a>
+<a href="#I" class="index-button">I</a>
+<a href="#J" class="index-button">J</a>
+<a href="#K" class="index-button">K</a>
+<a href="#L" class="index-button">L</a>
+<a href="#M" class="index-button">M</a>
+<a href="#N" class="index-button">N</a>
+<a href="#O" class="index-button">O</a>
+<a href="#P" class="index-button">P</a>
+<a href="#Q" class="index-button">Q</a>
+<a href="#R" class="index-button">R</a>
+<a href="#S" class="index-button">S</a>
+<a href="#T" class="index-button">T</a>
+<a href="#U" class="index-button">U</a>
+<a href="#V" class="index-button">V</a>
+<a href="#W" class="index-button">W</a>
+<a href="#X" class="index-button">X</a>
+<a href="#Y" class="index-button">Y</a>
+<a href="#Z" class="index-button">Z</a>
+
+
+
+</div></td>
+                                        </tr>
+                    </tbody>
+</table>
+    
+    
+    
+<div id="index-container">
+<a href="Morphology Overview.html" class="index-button wider-button">big picture, overview</a>
+
+<a href="#A" class="index-button">A</a>
+<a href="#B" class="index-button">B</a>
+<a href="#C" class="index-button">C</a>
+<a href="#D" class="index-button">D</a>
+<a href="#E" class="index-button">E</a>
+<a href="#F" class="index-button">F</a>
+<a href="#G" class="index-button">G</a>
+<a href="#H" class="index-button">H</a>
+<a href="#I" class="index-button">I</a>
+<a href="#J" class="index-button">J</a>
+<a href="#K" class="index-button">K</a>
+<a href="#L" class="index-button">L</a>
+<a href="#M" class="index-button">M</a>
+<a href="#N" class="index-button">N</a>
+<a href="#O" class="index-button">O</a>
+<a href="#P" class="index-button">P</a>
+<a href="#Q" class="index-button">Q</a>
+<a href="#R" class="index-button">R</a>
+<a href="#S" class="index-button">S</a>
+<a href="#T" class="index-button">T</a>
+<a href="#U" class="index-button">U</a>
+<a href="#V" class="index-button">V</a>
+<a href="#W" class="index-button">W</a>
+<a href="#X" class="index-button">X</a>
+<a href="#Y" class="index-button">Y</a>
+<a href="#Z" class="index-button">Z</a>
+<a href="#references" class="index-button wider-button">references</a>
+
+
+</div>
+    <p></p>
+        <p></p>
+<!--EDIT NOTES AT END OF FILE
+
+
+-->
    <hr class="heavy-rule">
 
 <div class="index-container">
@@ -2047,7 +2093,7 @@ pharynx (Snodgrass, 1956). Excerpt and image from&nbsp;Michener, Charles D., and
             <td width="20%" class="bordered-box-cell">
                 <!-- Second cell with image and caption ADD to JS-->
                 <div class="image-container">
-                    <img src="Andrena,metallic,slightly comp copy.jpg" class="gallery-image" onclick="openOverlay('Andrena,metallic,slightly comp copy.jpg')">
+                    <img src="Andrena,metallic,slightly comp copy.jpg" class="gallery-image" onclick="openOverlay('Osmia cara,metalic.jpg')">
                      <div class="caption">Dark vs slightly metallic tergae. </div>
                 </div>
                   <td width="20%" class="bordered-box-cell">
