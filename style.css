@@ -1,6 +1,6 @@
 <style>
-/*Rebuilding to eliminate conflicting styles.
-
+/*Rebuilt to eliminate conflicting styles May 1.
+z
 }
 /* BELOW: the elements for the index*/
  .container {
@@ -9,7 +9,7 @@
         }
 
         .image-container {
-            margin-right: 20px;
+            margin: 12px;
         }
 
         img {
@@ -64,8 +64,10 @@ body p {
 }
    .heavy-rule {
         border-style: solid; /* Explicitly set border style */
-       border-color: #979595;
+       border-color: #6475B4;
         border-width: 2px;
+           margin: 8; /* Remove default margin */
+ 
        width: 100%;
     }
 
@@ -110,8 +112,8 @@ body p {
 
 /* Style for cells with a bordered box */
 .bordered-box-cell {
-  border: 1px solid #000;
-  padding: 2px;
+  border: 1px solid #515050;
+  padding: 4px;
 }
 .bordered-box-cell p {
   margin: 0; /* Remove default margin on paragraphs */
@@ -231,6 +233,7 @@ h5 {
     width: 100%;
     height: auto;
     cursor: pointer;
+
 }
 
 .overlay {
