@@ -1,0 +1,27 @@
+
+/* CSS Document */
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+.part {
+  position: absolute;
+  display: none; /* Initially hide the labels */
+  background: transparent; /* No background color */
+  padding: 0; /* No padding */
+  border: none; /* No border */
+  color: #000; /* Ensure text color is set */
+}
+#toggleLabels {
+  position: absolute;
+  top: 10px; /* Adjust this value to position the button */
+  left: 10px; /* Adjust this value to position the button */
+  z-index: 10;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
