@@ -1,0 +1,35 @@
+
+/* CSS Document */
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+#baseDrawing {
+  display: block;
+}
+#labeledDrawing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; /* Initially hide the labeled drawing */
+}
+.hotspot {
+  position: absolute;
+  background: transparent; /* Invisible background */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor to indicate clickable area */
+  z-index: 10;
+}
+#toggleLabels {
+  position: absolute;
+  top: 10px; /* Adjust this value to position the button */
+  left: 10px; /* Adjust this value to position the button */
+  z-index: 20;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bee Anatomy</title>
+  <style>
+    .container {
+      position: relative;
+    }
+    .hotspot {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+ background-color: #4436F6; /*Use this for Solid color for the circle */
+     /* background-color: transparent; No visible background */   
+      border-radius: 50%; /* Makes the div a circle */
+      cursor: pointer;
+    }
+    .part {
+      position: absolute;
+      display: none;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 2px 5px;
+      border: 1px solid #030303;
+    }
+    .hotspot:hover + .part {
+      display: block;
+    }
+  </style>
+
+<body>
+  <div class="container">
+      <img src="Amanda.ceratina.lateral.jpg" alt="Anatomy of a Bee" width="1120">
+    <div class="hotspot" style="position: absolute; top: 262px; left: 328px; width: 10px; height: 10px;"></div>
+    <div class="part" style="top: 262px; left: 328px;"><a href="glossary DW.html#gena">Gena</a></div>
+    <div class="hotspot" style="position: absolute; top: 168px; left: 340px; width: 10px; height: 10px;"></div>
+    <div class="part" style="top: 168px; left: 340px;"><a href="glossary DW.html#vertex">Vertex</a></div>
+          <div class="hotspot" style="position: absolute; top: 150px; left: 460px; width: 10px; height: 10px;"></div>
+    <div class="part" style="top: 150px; left: 460px;"><a href="glossary DW.html#scutum">Scutum</a></div>
+    <!-- Add more hotspots and labels as needed -->
+  </div>
+</body>
