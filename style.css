@@ -177,7 +177,8 @@ h2 {
         color: #0725A3;
 }
 h3 {
-    font-size: 16px;
+    font-size: 20px;
+            color: #0725A3;
 }
 h4 {
     font-size: 10px;
@@ -210,6 +211,34 @@ h5 {
     color: red !important;
     font-weight: bold;
 }
+/* Code that makes Megachile-like image magnification */
+  .MSU-gallery .bordered-box-cell {
+   position: relative; /* Enables positioning of child elements */
+  min-height: 300px;
+  padding-bottom: 40px; /* Adds space to ensure the <h3> isn't covered */
+}
+
+  .MSU-gallery .bordered-box-cell h3 {
+    position: absolute; /* Keeps <h3> at the bottom */
+  bottom: 10px; /* Prevents it from being fully against the edge */
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  }
+.MSU-gallery .image-container img {
+  max-height: 250px; /* Prevents the image from exceeding this size */
+  width: auto; /* Maintains aspect ratio */
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
+/* Code that specifies that the MSU display style applies only to MSU-gallery. */
+.MSU-gallery .image-gallery {
+    max-width: 100%; /* Ensures images stay within cell boundaries */
+    height: auto;    /* Maintains aspect ratio */
+    cursor: pointer; /* Keeps the pointer for clickability */
+    display: block;  /* Ensures proper spacing around images */
+    margin: 0 auto;  /* Centers the image within the cell */
+  }
 /* Code that makes Megachile-like image magnification */
 .image-gallery {
     display: flex;
