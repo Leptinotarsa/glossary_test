@@ -39,6 +39,41 @@ How to Catch and Identify Bees and Manage a Collection</a>. These also provide a
         </tr>
     </tbody>
 </table>
+    <hr class="heavy-rule">
+                    <!-- Setup for Amanda drawing -->
+                    <!-- Determine base drawing width;
+Determine hotspot label position, top left, %. E.g., left_percentage = (hotspot_X / original_image_width) * 100;
+List of coordniates to copy into labels below:
+
+-->
+
+<div class="drawing-container">
+
+    <img src="Amanda.ceratina.lateral.jpg" alt="Anatomy of a Bee" id="baseDrawing"> 
+    
+    <img src="Amanda.ceratina.lateral.labeled.jpg" alt="Anatomy of a Bee with Labels" id="labeledDrawing" class="overlay-image invisible-image">
+    
+    <button id="toggleLabels">Show Labels</button>
+<a href="glossary DW.html#antenna" class="hotspot-label invisible-image" style="top: 45.3%; left: 8.8%;" target="_blank">antenna</a>
+<a href="glossary DW.html#frons" class="hotspot-label invisible-image" style="top: 32.6%; left: 20.8%;" target="_blank">frons</a>
+<a href="glossary DW.html#ocelli" class="hotspot-label invisible-image" style="top: 28.6%; left: 24.7%;" target="_blank">ocelli</a>
+<a href="glossary DW.html#vertex" class="hotspot-label invisible-image" style="top: 26.4%; left: 28.7%;" target="_blank">vertex</a>
+<a href="glossary DW.html#pronotum" class="hotspot-label invisible-image" style="top: 26.6%; left: 35.0%;" target="_blank">pronotum</a>
+<a href="glossary DW.html#pronotal lobe" class="hotspot-label invisible-image" style="top: 24.3%; left: 39.5%;" target="_blank">pronotal lobe</a>
+<a href="glossary DW.html#tegula" class="hotspot-label invisible-image" style="top: 27.1%; left: 43.9%;" target="_blank">tegula</a>
+<a href="glossary DW.html#scutum" class="hotspot-label invisible-image" style="top: 26.6%; left: 48.7%;" target="_blank">scutum</a>
+<a href="glossary DW.html#scutellum" class="hotspot-label invisible-image" style="top: 29.3%; left: 52.3%;" target="_blank">scutellum</a>
+<a href="glossary DW.html#metanotum" class="hotspot-label invisible-image" style="top: 31.8%; left: 54.3%;" target="_blank">metanotum</a>
+<a href="glossary DW.html#propodeum" class="hotspot-label invisible-image" style="top: 34.9%; left: 54.3%;" target="_blank">propodeum</a>
+<a href="glossary DW.html#mesosoma" class="hotspot-label invisible-image" style="top: 12.21%; left: 42.2%; font-size: 1.2em;" target="_blank">mesosoma (thorax)</a>
+<a href="glossary DW.html#gena" class="hotspot-label invisible-image" style="top: 54.7%; left: 32.2%;" target="_blank">gena</a>
+<a href="glossary DW.html#hypostomal carina" class="hotspot-label invisible-image" style="top: 64.4%; left: 20.7%;" target="_blank">hypostomal carina</a>
+<a href="glossary DW.html#mandible" class="hotspot-label invisible-image" style="top: 61.4%; left: 20.8%;" target="_blank">mandible</a>
+<a href="glossary DW.html#labrum" class="hotspot-label invisible-image" style="top: 55.83%; left: 12.93%;" target="_blank">labrum</a>
+<a href="glossary DW.html#clypeus" class="hotspot-label invisible-image" style="top: 50.89%; left: 13.14%;" target="_blank">clypeus</a>
+</div>
+
+
 <hr class="heavy-rule">
   <p><strong>Body structures, drawings by Rebekah Nelson, Very Handy Bee Manual</strong> </p>
   <table width="100%" border="1">
@@ -176,6 +211,38 @@ How to Catch and Identify Bees and Manage a Collection</a>. These also provide a
         </tr>
     </tbody>
 </table>
- <body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleButton = document.getElementById('toggleLabels');
+        const baseDrawing = document.getElementById('baseDrawing');
+        const labeledDrawing = document.getElementById('labeledDrawing');
+        const hotspotLabels = document.querySelectorAll('.hotspot-label');
+
+        let labelsVisible = false; // Initial state: labels are hidden
+
+        if (toggleButton) {
+            toggleButton.addEventListener('click', () => {
+                labelsVisible = !labelsVisible;
+
+                if (labelsVisible) {
+                    labeledDrawing.classList.remove('invisible-image');
+
+                    // You can remove these commented-out lines now, they are not needed with visibility:
+                    // Reading a layout-related property forces the browser to re-calculate layout
+                    // void labeledDrawing.offsetWidth;
+
+                    baseDrawing.classList.add('invisible-image'); // <-- FIX THIS LINE
+                    hotspotLabels.forEach(label => label.classList.remove('invisible-image')); // <-- FIX THIS LINE
+                    toggleButton.textContent = 'Hide Labels';
+                } else {
+                    labeledDrawing.classList.add('invisible-image');
+                    baseDrawing.classList.remove('invisible-image'); // <-- FIX THIS LINE
+                    hotspotLabels.forEach(label => label.classList.add('invisible-image')); // <-- FIX THIS LINE
+                    toggleButton.textContent = 'Show Labels';
+                }
+            });
+        }
+    });
+</script>
 
 </html>

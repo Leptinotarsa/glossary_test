@@ -6,8 +6,8 @@
 /* 1. The Container for your drawing and labels */
 .drawing-container {
     position: relative; /* CRITICAL: Establishes context for absolute children */
-    display: block; /* Makes it shrink-wrap its content (the base image) */
-    max-width: 100%; 
+    display: inline-block; /* Makes it shrink-wrap its content (the base image) */
+    max-width: 1120px; /* Or 100% if you want it to always fill its parent width */
     /* Add a border or background here temporarily if you want to visualize its size */
     /* border: 1px dashed red; */ 
 }

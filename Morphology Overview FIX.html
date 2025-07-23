@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+<title>Morphology Overivew</title>
+<meta name="description" content="Currently a draft" />
+<meta name="keywords" content="bees, glossary, discoverlife, morphology" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+</head>
+<body bgcolor="#E2E2E2">
+<!--asdasdasda-->
+
+<h2>WORK IN PROGRESS DRAFT - NOT FOR DISTRIBUTION
+
+</h2>
+<hr class="heavy-rule">
+<table width="100%">
+    <tbody>
+        <tr>
+            <td width="70%">
+                <!-- First cell with text -->
+                <a name="term"></a><h2>Basic morphology</h2><p>We are drawing here on two online sources: <a href="https://static1.squarespace.com/static/5a849d4c8dd041c9c07a8e4c/t/5ad3bc968a922d44a4728936/1523825933048/Michener+2007+The+Bees+of+the+World.pdf">The Bees of the World</a>, and <a href="http://bio2.elmira.edu/fieldbio/beemovies/beemanual/beemanual.pdf">The Very Handy Manual 2.0:
+How to Catch and Identify Bees and Manage a Collection</a>. These also provide additional detail beyond the scope of this resource.&nbsp;</p>                <p><a href="glossary DW.html">Back to glossary</a> for detailed definitions</p>
+            </td>
+                <td width="30%" class="bordered-box-cell">
+                <!-- First cell with text -->
+                <a name="orientation"></a><h3>Orientation:</h3>
+                    <ul class="custom-list">
+                        <li>Front/back: anterior=toward the head, posterior=away from the head.</li>
+                    <li>Up/down: dorsal=top (e.g., tergae), ventral=bottom (e.g., sternites).</li>
+                        <li>Center/edge: medial=towards the midline, lateral =away from the midline.</li>
+                    <li>Basal=near the origin of a structure, apical=towards the origin.</li>
+                        <li>Near/far: proximal=basal, distal=apical.</li>
+                    <li>Combinations: posterolateral, anteromedial, etc. </li>
+                    </ul>
+            </td>
+            
+        </tr>
+    </tbody>
+</table>
+    <hr class="heavy-rule">
+                    <!-- Setup for Amanda drawing -->
+                    <!-- Determine base drawing width;
+Determine hotspot label position, top left, %. E.g., left_percentage = (hotspot_X / original_image_width) * 100;
+List of coordniates to copy into labels below:
+
+-->
+
+<div class="drawing-container">
+
+    <img src="Amanda.ceratina.lateral.jpg" alt="Anatomy of a Bee" id="baseDrawing"> 
+    
+    <img src="Amanda.ceratina.lateral.labeled.jpg" alt="Anatomy of a Bee with Labels" id="labeledDrawing" class="overlay-image invisible-image">
+    
+    <button id="toggleLabels">Show Labels</button>
+<a href="glossary DW.html#antenna" class="hotspot-label invisible-image" style="top: 45.3%; left: 8.8%;" target="_blank">antenna</a>
+<a href="glossary DW.html#frons" class="hotspot-label invisible-image" style="top: 32.6%; left: 20.8%;" target="_blank">frons</a>
+<a href="glossary DW.html#ocelli" class="hotspot-label invisible-image" style="top: 28.6%; left: 24.7%;" target="_blank">ocelli</a>
+<a href="glossary DW.html#vertex" class="hotspot-label invisible-image" style="top: 26.4%; left: 28.7%;" target="_blank">vertex</a>
+<a href="glossary DW.html#pronotum" class="hotspot-label invisible-image" style="top: 26.6%; left: 35.0%;" target="_blank">pronotum</a>
+<a href="glossary DW.html#pronotal lobe" class="hotspot-label invisible-image" style="top: 24.3%; left: 39.5%;" target="_blank">pronotal lobe</a>
+<a href="glossary DW.html#tegula" class="hotspot-label invisible-image" style="top: 27.1%; left: 43.9%;" target="_blank">tegula</a>
+<a href="glossary DW.html#scutum" class="hotspot-label invisible-image" style="top: 26.6%; left: 48.7%;" target="_blank">scutum</a>
+<a href="glossary DW.html#scutellum" class="hotspot-label invisible-image" style="top: 29.3%; left: 52.3%;" target="_blank">scutellum</a>
+<a href="glossary DW.html#metanotum" class="hotspot-label invisible-image" style="top: 31.8%; left: 54.3%;" target="_blank">metanotum</a>
+<a href="glossary DW.html#propodeum" class="hotspot-label invisible-image" style="top: 34.9%; left: 54.3%;" target="_blank">propodeum</a>
+<a href="glossary DW.html#mesosoma" class="hotspot-label invisible-image" style="top: 12.21%; left: 42.2%; font-size: 1.4em;" target="_blank">mesosoma (thorax)</a>
+<a href="glossary DW.html#gena" class="hotspot-label invisible-image" style="top: 54.7%; left: 32.2%;" target="_blank">gena</a>
+<a href="glossary DW.html#hypostomal carina" class="hotspot-label invisible-image" style="top: 64.4%; left: 20.7%;" font-size: 1.0em; target="_blank">hypostomal carina</a>
+<a href="glossary DW.html#mandible" class="hotspot-label invisible-image" style="top: 61.4%; left: 20.8%;" font-size: 1.0em; target="_blank">mandible</a>
+<a href="glossary DW.html#labrum" class="hotspot-label invisible-image" style="top: 55.83%; left: 12.93%;" target="_blank">labrum</a>
+<a href="glossary DW.html#clypeus" class="hotspot-label invisible-image" style="top: 50.89%; left: 13.14%;" target="_blank">clypeus</a>
+</div>
+
+
+<hr class="heavy-rule">
+  <p><strong>Body structures, drawings by Rebekah Nelson, Very Handy Bee Manual</strong> </p>
+  <table width="100%" border="1">
+    <tbody>
+      <tr>
+          <td width="50%" class="bordered-box-cell">
+                <!-- Second cell with image and caption ADD to JS-->
+                <div class="image-container">
+                    <img src="dorsal drawing beemanual.jpg" class="gallery-image" onclick="openOverlay('dorsal drawing beemanual.jpg')">
+
+                    <div class="caption"></div>
+                     <img src="ventral drawing beemanual.jpg" class="gallery-image" onclick="openOverlay('ventral drawing beemanual.jpg')">
+              </div></td>
+              <td width="50%" class="bordered-box-cell">
+                <!-- Second cell with image and caption ADD to JS-->
+                <div class="image-container">
+                    <img src="lateral drawing beemanual.jpg" class="gallery-image" onclick="openOverlay('lateral drawing beemanual.jpg')">
+
+                </div>
+                  </td>
+      </tr>
+			  
+    </tbody>
+</table>
+<hr> 
+  <p><strong>Specimen version, Andrena profile and dorsal views <em>&nbsp;</em></strong> </p>
+  <table width="100%" border="1">
+    <tbody>
+      <tr>
+        <td width="48%"><img src="Andrena morphology2.jpg" alt=""  class="column"/>
+                           
+        </td>
+        <td width="52%"><p><img src="Andrena morphology dorsal.jpg" alt="" class="column"/></td>
+      </tr>
+			  
+    </tbody>
+</table>
+<hr class="heavy-rule">
+  <p><strong>The head, details, diagramatically</strong> </p>
+  <table width="100%" border="1">
+    <tbody>
+      <tr>
+                      <td width="60%" class="bordered-box-cell">
+                <!-- Second cell with image and caption ADD to JS-->
+                <div class="image-container">
+                    <img src="head drawing beemanual.jpg" class="gallery-image" onclick="openOverlay('head drawing beemanual.jpg')">
+
+                    <div class="caption">Drawing by&nbsp;Rebekah Nelson, Very Handy Bee Manual </div>
+                </div>
+        <td width="40%" class="bordered-box-cell">
+                <!-- Second cell with image and caption ADD to JS-->
+                <div class="image-container">
+                    <img src="head side drawing.jpg" class="gallery-image" onclick="openOverlay('head side drawing.jpg')"><img src="head back drawing.jpg" class="gallery-image" onclick="openOverlay('head back drawing.jpg')">
+
+                    <div class="caption">Bees of the World</div>
+
+                </div>
+             </tr>
+			  
+    </tbody>
+</table><hr>
+<a name="morphhead"></a>
+<hr class="heavy-rule">
+ <p><strong>Specimen version, <em>Andrena</em>, <em>Ceratina</em>, <em>Lasioglossum</em>.</strong> </p>
+<table width="100%">
+    <tbody>
+        <tr>
+
+            <td width="20%" class="bordered-box-cell">
+                <!-- Second cell with image and caption -->
+                <div class="image-container">
+                    <img src="Andrena morphology head.jpg" class="gallery-image" onclick="openOverlay('Andrena morphology head.jpg')">
+       
+                    <div class="caption">Andrena</div>
+                </div>
+            </td>
+            <td width="20%" class="bordered-box-cell">
+                <!-- Third cell with image and caption -->
+                <div class="image-container">
+                    <img src="Morphology head,ceratina.jpg" class="gallery-image" onclick="openOverlay('Morphology head,ceratina.jpg')">
+ 
+                    <div class="caption">Ceratina</div>
+                </div>
+            </td>
+ <td width="20%" class="bordered-box-cell">
+                <!-- Third cell with image and caption -->
+                <div class="image-container">
+                    <img src="posterior view lasio head.jpg" class="gallery-image" onclick="openOverlay('salmon.jpg')">
+
+                    <div class="caption">Posterior view of Lasioglossum head.</div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<hr class="heavy-rule">
+  <p><strong>Appendages</strong> </p>
+<table width="100%">
+    <tbody>
+        <tr>
+
+            <td width="25%" class="bordered-box-cell">
+                <!-- Second cell with image and caption -->
+                <div class="image-container">
+                    <img src="wing drawing beemanual.jpg" class="gallery-image" onclick="openOverlay('wing drawing beemanual.jpg')">
+       
+                   <div class="caption">Drawing by&nbsp;Rebekah Nelson, Very Handy Bee Manual </div>
+                </div>
+            </td>
+                        <td width="25%" class="bordered-box-cell">
+                <!-- Second cell with image and caption -->
+                <div class="image-container">
+                    <img src="Forewing cells and veins Nomada copy.jpg" class="gallery-image" onclick="openOverlay('Forewing cells and veins Nomada copy.jpg')">
+       
+                    <div class="caption">Forewing of Nomada (Apidae).</div>
+                </div>
+            </td>
+            <td width="25%" class="bordered-box-cell">
+                <!-- Third cell with image and caption -->
+                <div class="image-container">
+                    <img src="leg drawing beemanual.jpg" class="gallery-image" onclick="openOverlay('leg drawing beemanual.jpg')">
+ 
+                    <div class="caption">Drawing by&nbsp;Rebekah Nelson, Very Handy Bee Manual </div>
+                </div>
+            </td>
+ <td width="25%" class="bordered-box-cell">
+                <!-- Third cell with image and caption -->
+                <div class="image-container">
+                    <img src="Leg Ptilothrix.jpg" class="gallery-image" onclick="openOverlay('Leg Ptilothrix.jpg')">
+
+                    <div class="caption">Leg of Ptilothrix.</div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleButton = document.getElementById('toggleLabels');
+        const baseDrawing = document.getElementById('baseDrawing');
+        const labeledDrawing = document.getElementById('labeledDrawing');
+        const hotspotLabels = document.querySelectorAll('.hotspot-label');
+
+        let labelsVisible = false; // Initial state: labels are hidden
+
+        if (toggleButton) {
+            toggleButton.addEventListener('click', () => {
+                labelsVisible = !labelsVisible;
+
+                if (labelsVisible) {
+                    labeledDrawing.classList.remove('invisible-image');
+
+                    // You can remove these commented-out lines now, they are not needed with visibility:
+                    // Reading a layout-related property forces the browser to re-calculate layout
+                    // void labeledDrawing.offsetWidth;
+
+                    baseDrawing.classList.add('invisible-image'); // <-- FIX THIS LINE
+                    hotspotLabels.forEach(label => label.classList.remove('invisible-image')); // <-- FIX THIS LINE
+                    toggleButton.textContent = 'Hide Labels';
+                } else {
+                    labeledDrawing.classList.add('invisible-image');
+                    baseDrawing.classList.remove('invisible-image'); // <-- FIX THIS LINE
+                    hotspotLabels.forEach(label => label.classList.add('invisible-image')); // <-- FIX THIS LINE
+                    toggleButton.textContent = 'Show Labels';
+                }
+            });
+        }
+    });
+</script>
+
+</html>
